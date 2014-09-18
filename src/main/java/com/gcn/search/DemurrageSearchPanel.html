@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Search</title>
+</head>
+<body>
+<wicket:panel>
+<form wicket:id="search_form" class="search_form">
+	<div style="font-weight: bold; float: left; padding:0 5px 0 5px; color: #ffffff">Search: </div> 
+	
+	<div style="float: left; padding:0 0 0 5px;">
+		<select wicket:id="categories" name="cat_list">
+			<option></option>
+		</select>
+	</div>
+	<div style="float: left; padding:0 0 0 2px;">
+		<input wicket:id="search_text" type="text" name="search_text" size="80" />
+	</div>
+	<div style="float: left; padding:0 0 0 5px;">
+ 		<!-- <input wicket:id="search_submit" type="submit" value="Search" /> -->
+ 		 <select wicket:id="currencies" class="medium"></select> &nbsp;
+ 		<button wicket:id="search_submit" class="button">Search >></button>
+		<!--<input wicket:id="search_submit" type="image" src="search.gif" class="search_bt" />-->
+	</div>
+</form>
+</wicket:panel>
+</body>
+</html>

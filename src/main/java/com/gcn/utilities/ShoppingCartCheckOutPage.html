@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+<style>
+	label {
+		background-color: #eee;
+		padding: 4px;
+	}
+</style>
+    <wicket:link>
+  		<link rel="stylesheet" type="text/css" href="default.css" />
+  		<link rel="stylesheet" type="text/css" href="../HomePage.css"/>	  
+ 	</wicket:link>
+        <title>Registration</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    </head>
+    <body>  
+   	<div id="main_container">
+    	<div class="top_bar">
+			Home &nbsp;&nbsp;
+			About Us &nbsp;&nbsp;
+			Contact Us &nbsp;&nbsp;
+			FAQ &nbsp;&nbsp;
+		</div>
+    	<div class="header">
+			<h1>DEMURRAGE</h1>
+		</div>
+		<br /><br /><br />
+		
+  
+	<div class="prod_bar">
+		Items you wish to purchase 
+ 	</div>
+	<div class="prod_break"></div>
+	<div wicket:id="shopcart"> 
+		<div class="prod_box" style="height: 140px;">
+			<div class="prod_img_holder">
+				<img wicket:id="img" height="100" width="100"/>
+			</div>
+			<div>
+				<div wicket:id="prod_name" class="prod_title"></div>
+				<div class="prod_subtext" style="float: right;">
+					Ordered Quantity <span class="prod_eco" wicket:id="qtyordered"></span> 	
+				<br />
+					<b>Price </b> <span class="prod_eco">EUR</span> <span class="prod_eco" wicket:id="price"></span> for each<br />
+				</div>
+				<div class="prod_subtext">
+					<span style="font-size: 11pt;">
+					</span>
+				   	<span style="color: black"> 
+				   		Article Number: <span style="font-weight: bold;" wicket:id="prodid"></span>
+				   	</span>
+				   	<br />    	    		      	    		   
+			    	Brand: <span style="font-weight: bold; padding-right: 20px" wicket:id="brand"></span> 
+			    	Model: <span style="font-weight: bold;" wicket:id="model"></span><br />	    	   		   
+			    	Type: <span style="font-weight: bold;" wicket:id="type"></span><br />
+			    	<span wicket:id="short_desc"></span>			 		    	
+			    </div>
+			    <br />
+			    <div>
+					<form wicket:id="removecartform">
+				    	<button wicket:id="submitremovecart" class="button">Remove</button>
+				    </form>
+				</div>
+		    </div>	   
+	    </div>
+	    <div class="prod_break"></div>
+    </div>
+    <div class="prod_bar" style="text-align: right">
+	    Total Products: <span class="prod_eco" wicket:id="totalqty"></span>&nbsp;&nbsp;&nbsp; Total Price: EUR <span class="prod_eco" wicket:id="totalprice"></span> 
+	</div>
+	<div class="prod_break"></div>
+	<div class="prod_bar" style="text-align: right;">
+    		<a href="#" wicket:id="continueshopping"><span style="color: #E9601A; text-decoration: underline;">Continue shopping</span></a>&nbsp;&nbsp;&nbsp;
+    		<a href="#" wicket:id="makepayment"><span style="color: #E9601A; text-decoration: underline;">Make Payment</span></a>
+	</div>
+</div> 
+</body>
+</html>

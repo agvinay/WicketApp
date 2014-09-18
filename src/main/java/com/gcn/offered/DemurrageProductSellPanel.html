@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+    <title>Sell Product</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    </head>
+    <body>    
+    <wicket:panel>	
+    <script type="text/javascript">
+		sub_tab_change('product');
+	</script>
+	<wicket:link>
+  		<link rel="stylesheet" type="text/css" href="offer.css" />		
+  		<link rel="stylesheet" type="text/css" href="../HomePage.css"/>	  
+ 	</wicket:link>
+	<div class="sellproduct">	
+        <form wicket:id="form" action="" class="sellproduct">
+           
+            <h1>Create listing to Sell your Product</h1>
+            
+            <fieldset class="row1">
+            	<div style="float: right" class="feedbackPanelERROR" wicket:id="feedback"></div>
+                <legend>First Information</legend>
+                <div style="float:left;">
+               <p>
+	                 <label>Choose Category</label>
+	                 <select wicket:id="categories" name="cat_list">
+				     <option></option>
+			         </select>
+			    </p>
+                <p>
+	                 <label>Choose Subcategory</label><select wicket:id="subcat" name="subcat_list">
+				     <option></option>
+			         </select>
+                </p>
+                <p>
+                    <label>Create a short title for your item
+                    </label>
+                    <input wicket:id="productname" type="text" class="long"/>
+                </p>
+                <p>
+             		<label>Model</label>
+             		<input wicket:id="modelv"type="text" class="long"/>
+           		</p>
+                <p>
+                <label> Please give a short description</label>
+                <input wicket:id="shortdescr" type="text" class="vlong"/>
+                </p>
+                
+                <p>
+                <label> Type
+                </label>
+                <input wicket:id="type" type="text" class="medium"/>
+                &nbsp; eg. Camera/Tablet/Cellphone/Laptop
+                </p>
+                
+                
+                   <p>
+       				 <label for="upload">Add Pictures of your item</label>
+       				 <input wicket:id="fileInput" id="upload" type="file"/>
+        		   </p>
+        		   <p>
+        				<span wicket:id="progress"></span>
+                   </p>
+                    
+                
+           
+                <p>
+                    <label>Item Condition
+                    </label>
+                    <select wicket:id = "ItemCondition">        
+                    </select>
+                </p>
+               
+                <p>
+                    <label>Enter Brand of your item eg: Microsoft,Apple etc...
+                    </label>
+                    <input wicket:id="brand"type="text" class="medium"/>
+                </p>
+                
+                 <p>
+                    <label>MPN Enter the manufacturer's part number
+                    </label>
+                    <input wicket:id="mpn"type="text" class="medium"/>
+                </p>
+                </div>
+                <div class="infobox"><h4>Helpful Information</h4>
+                    <p>All Fields Marked with * are mandatory.</p>
+                </div>
+                 
+            </fieldset>
+          
+            <fieldset class="row1">
+                <legend>Further Information
+                </legend>
+               <p>
+                    <label>In what Currency to be paid
+                    </label>
+                    <select wicket:id="currencies" class="medium"></select>
+               </p>
+               <p>
+                    <label>Set the price of your item
+                    </label>
+                    <input wicket:id="price" type="text" class="short"/>
+                </p>
+               
+                <p>
+                    <label>Method of shipping for your item
+                    </label>
+                    <select wicket:id="shipping" class="medium"></select>
+                </p>
+              
+                <p>
+                    <label>Handling time in days
+                    </label>
+                    <input wicket:id="time" type="text" class="short"/>
+                </p>
+               
+                <p>
+                    <label>Decide how you want to get paid
+                    </label>
+                    <input wicket:id="payment"type="text" class="medium"/>
+                </p>
+               
+            <p>
+             <label>Please give some description of the product
+             </label>
+             <textarea wicket:id="proddesc" rows="10" cols="80" class="medium"></textarea>
+            </p>
+            
+            <p>
+             <label>How many items you want to sell
+             </label>
+             <input wicket:id="quantity"type="text" class="short"/>
+            </p>
+            </fieldset>
+            <fieldset class="row1">
+                <legend>Terms and Mailing
+                </legend>
+               
+                <p class="agreement">
+                    <input type="checkbox" value=""/>
+                    <label>I accept the <a href="#">Terms and Conditions *</a></label>
+                </p>
+                <p>
+                	<button wicket:id="submit" class="button">Submit &raquo;</button>
+                </p>           
+            </fieldset>          
+            
+        </form>
+        <!-- <div>
+    		<span wicket:id="uploadFeedback"/>
+    	</div> -->
+    </div>
+    
+                    
+ </wicket:panel>   
+</body>
+</html>
+
+
+
+
+

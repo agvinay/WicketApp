@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+    <head>
+    <style>
+label {
+	background-color: #eee;
+	padding: 4px;
+}
+ 
+.feedbackPanelERROR {
+	color: red;
+}
+</style>
+    <wicket:link>
+  <link rel="stylesheet" type="text/css" href="default.css" />	
+   
+ </wicket:link>
+        <title>Sell</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <link rel="stylesheet" type="text/css" href="css/default.css"/>
+    </head>
+    <body>    
+    	
+    	<div wicket:id="feedback"></div>
+        <form wicket:id="form" action="" class="register">
+           
+            <h1>Sell</h1>
+            
+            <fieldset class="row1">
+                <legend>Create your listing
+                </legend>
+               
+                <p>
+                    <label>Create a descriptive title for your item
+                    </label>
+                    <input wicket:id="productname"type="text" class="medium"/>
+                </p>
+                
+                <p>
+                    <label>Add Pictures of your item
+                    </label>
+                </p>
+                
+            </fieldset>
+           
+            <fieldset class="row2">
+                <p>
+                    <label>Describe the item you
+                    </label>
+                    <select wicket:id = "ItemCondition">
+                        <option>
+                        </option>
+                        <option value="1">New
+                        </option>
+                        <option value="2">Used
+                        </option>                        
+                    </select>
+                </p>
+               
+                <p>
+                    <label>Enter Brand of your item eg: Microsoft,Apple etc...
+                    </label>
+                    <input wicket:id="brand"type="text" class="medium"/>
+                </p>
+                
+                 <p>
+                    <label>MPN Enter the manufacturer's part number to optimize your listing for internet search engines.
+                    </label>
+                    <input wicket:id="mpn"type="text" class="medium"/>
+                </p>
+                 
+            </fieldset>
+          
+            <fieldset class="row3">
+                <legend>Further Information
+                </legend>
+              
+               <p>
+                    <label>Set the price of your item
+                    </label>
+                    <input wicket:id="price" type="text" class="short"/>
+                </p>
+               
+                <p>
+                    <label>Method of shipping for your item eg: DHL,Government Post, Parcel etc...
+                    </label>
+                    <input wicket:id="shipping" type="text" class="medium"/>
+                </p>
+              
+                <p>
+                    <label>Handling time in days
+                    </label>
+                    <input wicket:id="time"type="text" class="short"/>
+                </p>
+               
+                <p>
+                    <label>Decide how you want to get paid
+                    </label>
+                    <input wicket:id="payment"type="text" class="medium"/>
+                </p>
+               
+            </fieldset>
+           
+            <fieldset class="row4">
+                <legend>Terms and Mailing
+                </legend>
+               
+                <p class="agreement">
+                    <input type="checkbox" value=""/>
+                    <label>I accept the <a href="#">Terms and Conditions *</a></label>
+                </p>
+                <div class="infobox"><h4>Helpful Information</h4>
+                    <p>All Fields Marked with * are mandatory.</p>
+                </div>
+               
+            </fieldset>
+            
+             <div><button wicket:id="submit" class="button">Submit &raquo;</button></div>
+                                      
+        </form>
+        
+    </body>
+   </html>
+
+
+
+
+

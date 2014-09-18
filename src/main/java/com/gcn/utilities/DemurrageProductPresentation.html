@@ -1,0 +1,42 @@
+<html>
+<body>
+<wicket:panel>  
+	<div class="prod_bar">
+		Showing results for your Search ... 
+ 	</div>
+	<div class="prod_break"></div>
+	<div wicket:id="products"> 
+		<div class="prod_box">
+			<div class="prod_img_holder">
+			<img wicket:id="img" height="100" width="100"/>
+			</div>
+			<div>
+				<div wicket:id="prod_name" class="prod_title"></div>
+				<div class="prod_subtext">
+					<span style="font-size: 11pt;">
+						<span class="prod_eco" wicket:id="qty"></span> available for <b>Price </b> <span class="prod_eco">EUR</span> <span class="prod_eco" wicket:id="price"></span><br />
+					</span>
+				   	<span style="color: black"> 
+				   		Article Number: <span style="font-weight: bold;" wicket:id="prodid"></span>
+				   	</span>
+				   	<br />    	    		      	    		   
+			    	Brand: <span style="font-weight: bold; padding-right: 20px" wicket:id="brand"></span> 
+			    	Model: <span style="font-weight: bold;" wicket:id="model"></span><br />	    	   		   
+			    	Type: <span style="font-weight: bold;" wicket:id="type"></span><br />
+			    	<span wicket:id="short_desc"></span>
+			    	<div style="float: right">
+			    	<form wicket:id="qtyorderedform">
+				    	<div style="float: left">Add <input wicket:id="qtyordered" type="text" size="1" /></div>
+				    	<div style="float: left"><button wicket:id="submitqtyordered" class="button">To Cart</button></div>
+			    	</form>
+			    	</div>
+			    	<!-- <a href="#" wicket:id="addtocart">Add to Cart</a> -->
+			    </div>
+		    </div>
+	    </div>
+	    <div class="prod_break"></div>
+    </div>
+    <div class="prod_bar" wicket:id="navigator"></div>
+</wicket:panel> 
+</body>
+</html>

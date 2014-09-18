@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=8" />
+<title>Demurrage Home Page</title>
+		<wicket:link>
+			<link rel="stylesheet" type="text/css" href="HomePage.css"/>
+			<link rel="stylesheet" type="text/css" href="prodcategory.css"/>
+			<script type="text/javascript" src="menu.js"></script>
+			<script type="text/javascript" src="tabaction.js"></script>
+		</wicket:link>
+		
+<script type="text/javascript">
+
+</script>
+		
+</head>
+	
+	<body>
+	<div id="main_container">
+		<div class="top_bar">
+			Home &nbsp;&nbsp;
+			About Us &nbsp;&nbsp;
+			Contact Us &nbsp;&nbsp;
+			FAQ &nbsp;&nbsp;
+		</div>
+		<div class="header">
+			<h1>DEMURRAGE</h1>
+		</div>
+		<div class="top_info">
+			<a href="#">Welcome <span wicket:id="firstname"></span></a> &nbsp;&nbsp; 
+			<a href="#" wicket:id="registration">Register</a> &nbsp;&nbsp;
+			<a href="#" wicket:id="login">Login</a>  &nbsp;&nbsp;
+			<a href="#" wicket:id="logout">Logout</a>  &nbsp;&nbsp;
+		</div>
+		<br />
+		<div class="tab_box">
+		<p>
+			    <a href="#" wicket:id="wanted">
+				    <span class="tab" id="want">
+				    	Buy
+				    </span>
+				</a>
+				<a href="#" wicket:id="offered"> 
+				    <span class="tab" id="offer">
+				    	Sell
+				    </span>
+			    </a>		   
+		</p>
+		</div>	
+		<div style="margin-top: 7px;" wicket:id="maintab"></div>
+	</div>			
+	</body>
+</html>

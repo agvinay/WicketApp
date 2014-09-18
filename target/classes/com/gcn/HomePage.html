@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
+<title>Demurrage Home Page</title>
+		<wicket:link>
+			<link rel="stylesheet" type="text/css" href="HomePage.css"/>
+			<link rel="stylesheet" type="text/css" href="prodcategory.css"/>
+			<script type="text/javascript" src="menu.js"></script>
+		</wicket:link>
+</head>
+	
+	<body>
+	
+	<div class="top_bar">
+		Home &nbsp;&nbsp;
+		About Us &nbsp;&nbsp;
+		Contact Us &nbsp;&nbsp;
+		FAQ &nbsp;&nbsp;
+	</div>
+	<div class="header">
+		<h1>DEMURRAGE</h1>
+	</div>
+	<div class="top_info">
+		<a href="#">Welcome <span wicket:id="firstname"></span></a> &nbsp;&nbsp; 
+		<a href="#" wicket:id="registration">Register</a> &nbsp;&nbsp;
+		<a href="#" wicket:id="login">Login</a>  &nbsp;&nbsp;
+		<a href="#" wicket:id="logout">Logout</a>  &nbsp;&nbsp;
+	</div>
+	<br />
+	<div>
+	<p>
+		    <a href="#" wicket:id="wanted">
+			    <div class="tab" id="wanted">
+			    	Wanted
+			    </div>
+			</a>
+			<a href="#" wicket:id="offered"> 
+			    <div class="tab" id="offer">
+			    	Offered
+			    </div>
+		    </a>
+		    <div class="top_search">
+		    	<span wicket:id="searchpanel"></span>
+        		<!-- <div class="search_text"><a href="#">Advanced Search</a></div>
+            	<input type="text" class="search_input" name="search" /> -->
+        	</div>
+	</p>
+	</div>
+	    <br /><br /><br /><br />
+	<div class="page_box">
+		
+		<div wicket:id="subtab"></div>
+		
+		<br /><br /><br /><br />
+		<div style="float: left;">
+			<div wicket:id="productcategories" class="sidebarmenu"></div> 
+		</div>
+	
+		<div style="float: left; margin-left: 3px;" wicket:id="dpprespanel"></div>
+		
+		<div style="float: right; margin-right: 3px">
+			<div class="shoppingcart_box">
+				<span wicket:id="shoppingcart"></span>
+			</div>
+		</div>
+	   
+	     		
+	    <br /><br /><br /><br />
+		<div id="bd">									
+			<!-- <span wicket:id="username"></span> -->	
+		</div>
+		
+	   </div>
+	 	
+	</body>
+</html>

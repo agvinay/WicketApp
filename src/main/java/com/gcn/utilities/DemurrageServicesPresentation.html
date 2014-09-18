@@ -1,0 +1,33 @@
+<html>
+<body>
+<wicket:panel>  
+	<div class="prod_bar">
+		Showing results for your Search ... 
+ 	</div>
+	<div class="prod_break"></div>
+	<div wicket:id="services"> 
+		<div class="prod_box">
+			<div class="prod_img_holder"></div>
+			<div>
+				<div wicket:id="short_desc" class="prod_title"></div>
+				<div class="prod_subtext">
+					<span style="font-size: 11pt;">
+						<span class="prod_eco" wicket:id="duration"></span> required for <b>Price </b> <span class="prod_eco">EUR</span> <span class="prod_eco" wicket:id="wage"></span><br />
+					</span>
+				   	<span style="color: black"> 
+				   		service id Number: <span style="font-weight: bold;" wicket:id="service_id"></span>
+				   	</span>
+				   	<br />    	    		      	    		   
+			    	Job City: <span style="font-weight: bold; padding-right: 20px" wicket:id="job_city"></span> 
+			    	Employer name: <span style="font-weight: bold;" wicket:id="employer_name"></span><br />	    	   		   
+			    	Employer address: <span style="font-weight: bold;" wicket:id="employer_address"></span><br />
+			    	<br />
+			    </div>
+		    </div>
+	    </div>
+	   	<div class="prod_break"></div>
+    </div>
+    <div class="prod_bar" wicket:id="navigator"></div>
+</wicket:panel> 
+</body>
+</html>

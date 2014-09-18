@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+<style>
+	label {
+		background-color: #eee;
+		padding: 4px;
+	}
+	 
+	.feedbackPanelERROR {
+		color: red;
+	}
+</style>
+    <wicket:link>
+  		<link rel="stylesheet" type="text/css" href="default.css" />
+  		<link rel="stylesheet" type="text/css" href="../HomePage.css"/>	  
+ 	</wicket:link>
+        <title>Login</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    </head>
+    <body>  
+		<div class="top_bar">
+			Home &nbsp;&nbsp;
+			About Us &nbsp;&nbsp;
+			Contact Us &nbsp;&nbsp;
+			FAQ &nbsp;&nbsp;
+		</div>
+    	<div class="header">
+			<h1>DEMURRAGE</h1>
+		</div>
+		<br /><br /><br />
+		
+    	<!-- <div wicket:id="feedback"></div> -->
+        <form wicket:id="loginform" action="" class="login">
+		   <span style="text-align: center;"><h1>Sign In to my Demurrage Account</h1></span>
+		   <br />
+		   <div style="margin-left: 70px">
+		     <label>Email</label>
+			 <input wicket:id="username" type="text" /> 
+		   </div>
+		   <br /><br />
+		   <div style="margin-left: 70px">
+			 <label>Password</label>
+			 <input wicket:id="passwd" type="password" /> 
+		   </div>
+		   <br /><br />
+		   
+		   <div style="margin-left: 175px">
+		  	 <button type="submit" class="button">Sign In</button>
+		  </div>
+		  <br /><br /><br /><br />
+		  <div style="text-align: center;"><h2>Not a Demurrage member yet?</h2></div>
+		  <div style="margin-left: 175px">
+		  	 <a href="#" wicket:id="register">
+		  	 	<div class="button">Register</div>
+		  	 </a>
+		  </div>
+	 </form>
+		 
+	
+	
+
+</body>
+</html>
